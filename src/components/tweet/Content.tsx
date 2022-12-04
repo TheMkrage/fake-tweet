@@ -8,7 +8,7 @@ function Content({ config }: { config: TweetConfig }) {
 
   return (
     <div className="tweet-content">
-      {text && <div className="txt">{text.replace(/(?:\r\n|\r|\n)/g, '<br />')}</div>}
+      {text && <div className="txt">{text}</div>}
       <ImagesContainer config={config} />
     </div>
   );
